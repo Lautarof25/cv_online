@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --primary-font: 'Lato', sans-serif;
+    
+    --primary-color: #ba0006;
+    --secondary-color: #f2f2f2;
+
+    --quarter: 25rem;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*, *::before, *::after {box-sizing: inherit; }
+body {
+    font-family: var(--primary-font);
+    font-size: 16px; /* 1rem = 10px */
+}
+svg {
+    width: 2rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.container {
+    position: relative;
+    width:min(90%, 100rem);
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 3rem;
+}
+section h2, h3 {
+    color: var(--primary-color);
+}
+.section__title {
+    border-bottom: 0.5rem solid var(--primary-color);
+}
+p {
+    margin: 1rem 0;
+}
+/* Corners balls */
+.ball-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--quarter);
+    height: var(--quarter);
+    background: var(--primary-color);
+    border-radius: 0 0 var(--quarter) 0;
+    -moz-border-radius: 0 0 var(--quarter) 0;
+    -webkit-border-radius: 0 0 var(--quarter) 0;
+    z-index: -1;
+}
+.red-2 {
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15rem 0 0 0;
+    -moz-border-radius: 15rem 0 0 0;
+    -webkit-border-radius: 15rem 0 0 0; 
+}
+.ball-gray {
+    width: 120%;
+    height: 40rem;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    top: -17.5rem;
+}
+/* Header */
+.header__photo {
+    border-radius: 50%;
+    padding: 1.5rem;
+    border: .4rem solid black;
+    width: 25rem;
+}
+.header__title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header__title span {
+    display: block;
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+/* Main */
+.main .section__container{
+    margin-bottom: 3rem;
+}
+h3 {
+    margin: 0;
+}
+.main .dates {
+    font-size: 2rem;
+}
+.institution_name {
+    color: black;
+}
+/* Footer */
+ul {
+    list-style: none; /* Remove default bullets */
+}
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--primary-color); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+ul li {
+    margin-top: 1rem;
+}
+/* Layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
