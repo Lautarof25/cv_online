@@ -27,7 +27,7 @@ svg {
     position: relative;
     width:min(90%, 100rem);
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 3rem;
 }
 section h2, h3 {
@@ -38,6 +38,7 @@ section h2, h3 {
 }
 p {
     margin: 1rem 0;
+    text-align: justify;
 }
 /* Corners balls */
 .ball-red {
@@ -77,7 +78,7 @@ p {
     border-radius: 50%;
     padding: 1.5rem;
     border: .4rem solid black;
-    width: 25rem;
+    max-width: 25rem;
 }
 .header__title {
     font-weight: bold;
@@ -122,4 +123,22 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+}
+.column-1{
+    flex: 1 1 20ch;
+}
+.column-2 {
+    flex: 4 1 30ch;
+}
+footer.column-1 {
+    order: -1;
+}
+/* Query */
+@media (max-width: 700px) { 
+    html {
+        font-size: .4rem;
+    }    
+    .header__img{
+        text-align: center;
+    }
 }
