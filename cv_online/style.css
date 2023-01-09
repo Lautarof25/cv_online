@@ -91,7 +91,7 @@ p {
 }
 /* Main */
 .main .section__container{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 h3 {
     margin: 0;
@@ -101,6 +101,14 @@ h3 {
 }
 .institution_name {
     color: black;
+}
+.education .section__container:not(.section__container:last-child){
+    border-bottom: 1px solid;
+}
+.degree {
+    list-style:disc outside none;
+    display:list-item; 
+    margin-left: 2rem;
 }
 /* Footer */
 ul {
