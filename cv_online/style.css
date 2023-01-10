@@ -142,6 +142,16 @@ ul li::before {
 ul li {
     margin-top: 1rem;
 }
+.iconos {
+    font-size: 4rem;
+}
+.iconos i{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+.iconos i:hover{
+    filter: brightness(1.75);
+}
 /* Layout */
 .flex {
     display: flex;
