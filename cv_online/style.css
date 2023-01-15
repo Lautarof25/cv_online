@@ -96,6 +96,9 @@ p {
 h3 {
     margin: 0;
 }
+.main .background .section__container:first-of-type{
+    border-bottom: 1px solid;
+}
 .main .dates {
     font-size: 2rem;
 }
