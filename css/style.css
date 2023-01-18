@@ -159,6 +159,7 @@ ul li {
     background-color: black;
     width: fit-content;
     border-radius: 5px;
+    align-self: center;
 }
 .github a {
     color: white;
@@ -168,6 +169,16 @@ ul li {
 .github:hover {
     filter: brightness(.75);
 }
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-contact > * {
+    display: flex;
+    align-items: center;
+}
+
 /* Layout */
 .flex {
     display: flex;
