@@ -1,45 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
-:root{
+:root {
     --primary-font: 'Lato', sans-serif;
-    
+
     --primary-color: #ba0006;
     --secondary-color: #f2f2f2;
 
     --quarter: 25rem;
 }
-html{
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
     overflow-x: hidden;
 }
-*, *::before, *::after {box-sizing: inherit; }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: var(--primary-font);
-    font-size: 16px; /* 1rem = 10px */
+    font-size: 16px;
+    /* 1rem = 10px */
 }
+
 svg {
     width: 2rem;
     height: auto;
     margin-right: 0.5rem;
 }
+
 .container {
     position: relative;
-    width:min(90%, 100rem);
+    width: min(90%, 100rem);
     margin: 0 auto;
     /* border: 1px solid black; */
     padding: 3rem;
 }
-section h2, h3 {
+
+section h2,
+h3 {
     color: var(--primary-color);
 }
+
 .section__title {
     border-bottom: 0.5rem solid var(--primary-color);
 }
+
 p {
     margin: 1rem 0;
     text-align: justify;
 }
+
 /* Corners balls */
 .ball-red {
     position: absolute;
@@ -53,6 +68,7 @@ p {
     -webkit-border-radius: 0 0 var(--quarter) 0;
     z-index: -1;
 }
+
 .red-2 {
     top: unset;
     left: unset;
@@ -62,8 +78,9 @@ p {
     height: 15rem;
     border-radius: 15rem 0 0 0;
     -moz-border-radius: 15rem 0 0 0;
-    -webkit-border-radius: 15rem 0 0 0; 
+    -webkit-border-radius: 15rem 0 0 0;
 }
+
 .ball-gray {
     width: 120%;
     height: 40rem;
@@ -73,6 +90,7 @@ p {
     z-index: -2;
     top: -17.5rem;
 }
+
 /* Header */
 .header__photo {
     border-radius: 50%;
@@ -80,42 +98,53 @@ p {
     border: .4rem solid black;
     max-width: 25rem;
 }
+
 .header__title {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .header__title span {
     display: block;
     color: var(--primary-color);
     font-size: 5rem;
 }
+
 /* Main */
-.main .section__container{
+.main .section__container {
     margin-bottom: 1rem;
 }
+
 h3 {
     margin: 0;
 }
-.main .background .section__container:first-of-type{
+
+.main .background .section__container:first-of-type {
     border-bottom: 1px solid;
 }
+
 .main .dates {
     font-size: 2rem;
 }
+
 .institution_name {
     color: black;
 }
-.education .section__container:not(.section__container:last-child){
+
+.education .section__container:not(.section__container:last-child) {
     border-bottom: 1px solid;
 }
+
 .degree {
-    list-style:disc outside none;
-    display:list-item; 
+    list-style: disc outside none;
+    display: list-item;
     margin-left: 2.5rem;
 }
-.contacts > p {
+
+.contacts>p {
     display: flex;
 }
+
 button {
     margin-left: 1rem;
     border: none;
@@ -126,57 +155,85 @@ button {
     cursor: pointer;
     transition: all 0.5s;
 }
-button:hover{
+
+button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
 /* Footer */
 ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
+    /* Remove default bullets */
 }
+
 ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: var(--primary-color); /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--primary-color);
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
 }
+
 ul li {
     margin-top: 1rem;
 }
+
 .iconos {
     font-size: 4rem;
 }
-.iconos i{
+
+.iconos i {
     color: var(--primary-color);
     transition: all 0.5s;
 }
-.iconos i:hover{
+
+.iconos i:hover {
     filter: brightness(1.75);
 }
+
 .github {
     background-color: black;
     width: fit-content;
     border-radius: 5px;
     align-self: center;
 }
+
 .github a {
     color: white;
     text-decoration: none;
     padding: 5px;
 }
+
 .github:hover {
     filter: brightness(.75);
 }
+
 .flex-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.flex-contact > * {
+
+.flex-contact>* {
     display: flex;
     align-items: center;
+}
+
+.flotante {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1%;
+    left: 50%;
+    text-align: center;
 }
 
 /* Layout */
@@ -186,21 +243,35 @@ ul li {
     justify-content: center;
     gap: 2rem;
 }
-.column-1{
+
+.column-1 {
     flex: 1 1 20ch;
 }
+
 .column-2 {
     flex: 4 1 30ch;
 }
+
 footer.column-1 {
     order: -1;
 }
+
 /* Query */
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
     html {
         font-size: .4rem;
-    }    
-    .header__img,.header__container{
+    }
+
+    .header__img,
+    .header__container {
+        text-align: center;
+    }
+    .flotante {
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 1%;
+        left: 0;
         text-align: center;
     }
 }
