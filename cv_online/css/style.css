@@ -236,6 +236,22 @@ ul li {
     text-align: center;
 }
 
+.download a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+.download a:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
 /* Layout */
 .flex {
     display: flex;
