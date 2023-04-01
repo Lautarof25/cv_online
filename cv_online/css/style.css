@@ -94,8 +94,13 @@ p {
 /* Header */
 .select_idiom {
     position: absolute;
-    left: 0;
-    top: -20px;
+    left: 25%;
+    transform: translate(-25%, 0);
+    z-index: 1000;
+    -webkit-transform: translate(-25%, 0);
+    -moz-transform: translate(-25%, 0);
+    -ms-transform: translate(-25%, 0);
+    -o-transform: translate(-25%, 0);
 }
 
 header {
@@ -268,30 +273,31 @@ table {
     border-collapse: collapse;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  table td  {
+}
+
+table td {
     background-color: white;
-  }
-  
-  td:not(.none) {
+}
+
+td:not(.none) {
     border: 1px solid #f2f2f2;
     padding: 5px;
     width: 50%;
-    
-  }
-  
-  .year{
+
+}
+
+.year {
     background-color: #ba0006;
     color: white;
     text-align: center;
     font-weight: bold;
-  }
-  
-  table .titles td {
+}
+
+table .titles td {
     background-color: #f2f2f2;
     font-weight: bold;
-  }
+}
+
 /* Layout */
 .flex {
     display: flex;
@@ -322,16 +328,7 @@ footer.column-1 {
     .header__container {
         text-align: center;
     }
-    .select_idiom {
-        position: absolute;
-        left: 100%;
-        top: -20px;
-        transform: translate(-100%, 0);
-        -webkit-transform: translate(-100%, 0);
-        -moz-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-        -o-transform: translate(-100%, 0);
-}
+
     .flotante {
         position: fixed;
         margin-left: auto;
@@ -340,7 +337,15 @@ footer.column-1 {
         left: 0;
         text-align: center;
     }
+
+    /* Flotante */
+    .a2a_default_style {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
     table {
         max-width: 100%;
-      }
+    }
 }

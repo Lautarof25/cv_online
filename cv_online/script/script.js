@@ -13,25 +13,19 @@ container.innerHTML += spanish;
 var select = document.getElementById("select");
 // Creo una variable para guardar 
 // la opción elegida en el select
-let selected
+let selected;
 
-// (Está en las diapositivas de filtering data)
-
-select.addEventListener("change",(evento) => capturarSelect(evento))
-
-// Creo la función para capturar el evento
-
-function capturarSelect(evento){
-  selected = evento.target.value
-  if(selected == "spanish"){
+select.addEventListener("change",(e) =>{
+  if (e.target.value == "spanish"){
     container.innerHTML = ""
     container.innerHTML += spanish
-  }else {
+    e.target.selected = "spanish"
+  }else if (e.target.value == "english") {
     container.innerHTML = ""
     container.innerHTML += english
+    e.target.selected = "english"
   }
-}
-
+})
 
 // Copiar numero de teléfono
 let text = document.getElementById('myText').innerHTML;

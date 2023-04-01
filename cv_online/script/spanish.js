@@ -1,14 +1,7 @@
 const dataSpanish = `
-
 <div class="ball-red"></div>
 <div class="ball-gray"></div>
-<header id="header" class="header flex">
-    <div class="select_idiom">
-        <select name="" id="select">
-            <option value="spanish" selected>Spanish</option>
-            <option value="english">English</option>
-        </select>
-    </div>    
+<header id="header" class="header flex"> 
     <div class="column-1 header__img">
         <img src="./img/profile_picture.jpg"
             alt="profile photo" class="header__photo">
@@ -276,21 +269,6 @@ const dataSpanish = `
             </div>
         </section>
     </footer>
-</div>
+  </div>
 <div class="ball-red red-2"></div>
-
-<div class="flotante">
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://resume-2pc.pages.dev/"
-        data-a2a-title="CV Lautaro Fernández">
-        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-        <a class="a2a_button_linkedin"></a>
-        <a class="a2a_button_email"></a>
-        <a class="a2a_button_whatsapp"></a>
-    </div>
-    <script>
-        var a2a_config = a2a_config || {};
-        a2a_config.locale = "es-AR";
-    </script>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
-</div>
 `
