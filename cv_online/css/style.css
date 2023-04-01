@@ -252,6 +252,36 @@ ul li {
     transition: transform 1s;
 }
 
+/* Table Education */
+
+table {
+    border-collapse: collapse;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  table td  {
+    background-color: white;
+  }
+  
+  td:not(.none) {
+    border: 1px solid #f2f2f2;
+    padding: 5px;
+    width: 50%;
+    
+  }
+  
+  .year{
+    background-color: #ba0006;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  table .titles td {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
 /* Layout */
 .flex {
     display: flex;
@@ -290,4 +320,7 @@ footer.column-1 {
         left: 0;
         text-align: center;
     }
+    table {
+        max-width: 100%;
+      }
 }
