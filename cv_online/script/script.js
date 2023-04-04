@@ -18,7 +18,7 @@ let selected;
 select.addEventListener("change",(e) =>{
   if (e.target.value == "spanish"){
     container.innerHTML = ""
-    container.innerHTML += spanish
+    container.innerHTML += english
     e.target.selected = "spanish"
   }else if (e.target.value == "english") {
     container.innerHTML = ""
