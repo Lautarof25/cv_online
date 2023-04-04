@@ -7,7 +7,7 @@ let spanish = dataSpanish;
 let english = dataEnglish;
 
 // Imprimos por primera vez 
-container.innerHTML += spanish;
+container.innerHTML += english;
 
 // Traigo el botón select
 var select = document.getElementById("select");
