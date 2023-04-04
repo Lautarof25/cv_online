@@ -7,7 +7,7 @@ let spanish = dataSpanish;
 let english = dataEnglish;
 
 // Imprimos por primera vez 
-container.innerHTML += english;
+container.innerHTML += spanish;
 
 // Traigo el botón select
 var select = document.getElementById("select");
@@ -18,7 +18,7 @@ let selected;
 select.addEventListener("change",(e) =>{
   if (e.target.value == "spanish"){
     container.innerHTML = ""
-    container.innerHTML += english
+    container.innerHTML += spanish
     e.target.selected = "spanish"
   }else if (e.target.value == "english") {
     container.innerHTML = ""

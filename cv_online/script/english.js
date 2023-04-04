@@ -272,7 +272,7 @@ const dataEnglish = `
         <section class="section download">
             <h2 class="section__title">Download CV</h2>
             <div class="flex">
-                <a href="./pdf/cv_lautaro_fernandez.pdf" download>Download
+                <a href="./pdf/cv_lautaro_fernandez_en.pdf" download>Download
                 </a>
             </div>
         </section>
