@@ -158,6 +158,12 @@ const dataSpanish = `
                 Desempeñarme en tareas administrativo-informáticas, aportando los conocimientos de mis experiencias laborales y poder demostrar mis habilidades en materia de tecnología.
             </p>
         </section>
+        <section class="section profile">
+            <h2 class="section__title">Aptitudes</h2>
+            <p class="Aptitudes">
+            Adaptación a los cambios y ganas aprender algo nuevo; facilidad para trabajar en equipo, planificador a largo plazo.
+            </p>
+        </section>
         <section class="section contacts">
             <h2 class="section__title">Contacto</h2>
             <div class="flex-contact">

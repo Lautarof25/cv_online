@@ -160,6 +160,12 @@ const dataEnglish = `
             To work in administrative and computer-related tasks, contributing my knowledge and skills gained from my work experience and demonstrating my abilities in the field of technology.
             </p>
         </section>
+        <section class="section profile">
+        <h2 class="section__title">Key skills</h2>
+          <p class="Aptitudes">
+          Adaptation to changes and always eager to learn; ease of working in a team, long-term planner.
+        </p>
+        </section>
         <section class="section contacts">
             <h2 class="section__title">Contacto</h2>
             <div class="flex-contact">
