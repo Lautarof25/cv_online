@@ -7,8 +7,8 @@ const dataSpanish = `
             alt="profile photo" class="header__photo">
     </div>
     <div class="header__container column-2">
-        <h1 class="header__title">Lautaro <span>Fernández</span></h1>
-        <h2 class="header__p">Desarrollador Full-Stack</h2>
+        <h1 class="header__title" contenteditable="true">Lautaro <span contenteditable="true">Fernández</span></h1>
+        <h2 class="header__p" contenteditable="true">Desarrollador Full-Stack</h2>
     </div>
 </header>
 <div class="flex">
@@ -16,29 +16,29 @@ const dataSpanish = `
         <section class="section background">
             <h2 class="section__title">Experiencia laboral</h2>
             <div class="section__container">
-                <p class="dates">2011 - Actual</p>
-                <h3 class="role">Armador, reparador y mantenimiento PC</h3>
-                <p class="company">Freelance</p>
+                <p class="dates" contenteditable="true">2011 - Actual</p>
+                <h3 class="role" contenteditable="true">Armador, reparador y mantenimiento PC</h3>
+                <p class="company" contenteditable="true">Freelance</p>
                 <ul>
-                    <li>Armado, mantenimiento, reparación y reciclado de PC de escritorio y portátiles</li>
-                    <li>Desarrollo web con lenguajes HTML, CSS, JavaScript y frameworks.
+                    <li contenteditable="true">Armado, mantenimiento, reparación y reciclado de PC de escritorio y portátiles</li>
+                    <li contenteditable="true">Desarrollo web con lenguajes HTML, CSS, JavaScript y frameworks.
                     </li>
-                    <li>Creación de planillas inteligentes para administración productiva de pymes y optimización del posicionamiento web.
+                    <li contenteditable="true">Creación de planillas inteligentes para administración productiva de pymes y optimización del posicionamiento web.
                     </li>
-                    <li>Impartiendo clases de internet avanzado a personas adultas para acortar la brecha digital.
+                    <li contenteditable="true">Impartiendo clases de internet avanzado a personas adultas para acortar la brecha digital.
                     </li>
                 </ul>
             </div>
             <div class="section__container">
-                <p class="dates">2008 - 2009</p>
-                <h3 class="role">Administrativo informático</h3>
-                <p class="company">Empresa de transportes Don Pedro</p>
+                <p class="dates" contenteditable="true">2008 - 2009</p>
+                <h3 class="role" contenteditable="true">Administrativo informático</h3>
+                <p class="company" contenteditable="true">Empresa de transportes Don Pedro</p>
                 <ul>
-                    <li>Registro y control de bolsines, remitos, gastos de choferes y cierre de rendiciones.
-                    </li>
-                    <li>Atención a choferes y derivaciones para la solución a problemas generales y urgentes.
-                    </li>
-                    <li>Ideé una planilla de registro de entregas de choferes para acortar tiempos de consultas.
+                    <li contenteditable="true">Registro y control de bolsines, remitos, gastos de choferes y cierre de rendiciones.
+                    </li contenteditable="true">
+                    <li contenteditable="true">Atención a choferes y derivaciones para la solución a problemas generales y urgentes.
+                    </li contenteditable="true">
+                    <li contenteditable="true">Ideé una planilla de registro de entregas de choferes para acortar tiempos de consultas.
                     </li>
                 </ul>
             </div>
@@ -47,105 +47,105 @@ const dataSpanish = `
             <h2 class="section__title">Formación</h2>
             <table>
                 <tr>
-                  <td colspan="2" class="year">2022</td>
+                  <td colspan="2" class="year" contenteditable="true">2022</td>
                 </tr>
                 <tr class="titles">
                   <td>Descripción</td>
                   <td>Institución</td>
                 </tr>
                 <tr>
-                  <td>Testing QA Basico</td>
-                  <td>Eduting, Academia QA</td>
+                  <td contenteditable="true">Testing QA Basico</td>
+                  <td contenteditable="true">Eduting, Academia QA</td>
                 </tr>
                   <tr>
-                  <td>Introducción a SQL</td>
-                  <td>Tecno 3F</td>
+                  <td contenteditable="true">Introducción a SQL</td>
+                  <td contenteditable="true">Tecno 3F</td>
                 </tr>
                 <tr>
-                  <td>Programación desde cero</td>
-                  <td>Egg Educación</td>
+                  <td contenteditable="true">Programación desde cero</td>
+                  <td contenteditable="true">Egg Educación</td>
                 </tr>
                 <tr>
-                  <td>Python Core</td>
-                  <td>SoloLearn</td>
+                  <td contenteditable="true">Python Core</td>
+                  <td contenteditable="true">SoloLearn</td>
                 </tr>
                 <tr>
-                  <td>Java II</td>
-                  <td>Fundaula</td>
+                  <td contenteditable="true">Java II</td>
+                  <td contenteditable="true">Fundaula</td>
                 </tr>
                 <tr>
                   <td colspan="2" class="year">2021</td>
                 </tr>
                 <tr class="titles">
-                  <td>Descripción</td>
-                  <td>Institución</td>
+                  <td contenteditable="true">Descripción</td>
+                  <td contenteditable="true">Institución</td>
                 </tr>
                 <tr>
-                  <td>Curso Python básico</td>
-                  <td>Universidad de Hurlingham</td>
+                  <td contenteditable="true">Curso Python básico</td>
+                  <td contenteditable="true">Universidad de Hurlingham</td>
                 </tr>
                 <tr>
-                  <td>Introducción al desarrollo web II</td>
-                  <td>Google Activate</td>
+                  <td contenteditable="true">Introducción al desarrollo web II</td>
+                  <td contenteditable="true">Google Activate</td>
                 </tr>
                 <tr>
-                  <td>Responsive Web Desing</td>
-                  <td>FreeCodeCamp</td>
+                  <td contenteditable="true">Responsive Web Desing</td>
+                  <td contenteditable="true">FreeCodeCamp</td>
                 </tr>
                 <tr>
                   <td colspan="2" class="year">2020</td>
                   
                 </tr>
                 <tr class="titles">
-                  <td>Descripción</td>
-                  <td>Institución</td>
+                  <td contenteditable="true">Descripción</td>
+                  <td contenteditable="true">Institución</td>
                 </tr>
                 <tr>
-                  <td>Tecnicatura Universitaria en Informática [1º año]</td>
-                  <td>Universidad de Hurlingham</td>
+                  <td contenteditable="true">Tecnicatura Universitaria en Informática [1º año]</td>
+                  <td contenteditable="true">Universidad de Hurlingham</td>
                 </tr>
                 <tr>
                   <td colspan="2" class="year">2019</td>
                   
                 </tr>
                 <tr class="titles">
-                  <td>Descripción</td>
-                  <td>Institución</td>
+                  <td contenteditable="true">Descripción</td>
+                  <td contenteditable="true">Institución</td>
                 </tr>
                 <tr>
-                  <td>Programador de sistemas de intefaces gráficas</td>
-                  <td>CFP Hurlingham</td>
+                  <td contenteditable="true">Programador de sistemas de intefaces gráficas</td>
+                  <td contenteditable="true">CFP Hurlingham</td>
                 </tr>
                 <tr>
                   <td colspan="2" class="year">2018</td>
                   
                 </tr>
                 <tr class="titles">
-                  <td>Descripción</td>
-                  <td>Institución</td>
+                  <td contenteditable="true">Descripción</td>
+                  <td contenteditable="true">Institución</td>
                 </tr>
                 <tr>
-                  <td>Supervisor y administrador de redes informáticas</td>
-                  <td>CFP Hurlingham</td>
+                  <td contenteditable="true">Supervisor y administrador de redes informáticas</td>
+                  <td contenteditable="true">CFP Hurlingham</td>
                 </tr>
                 <tr>
-                  <td>Diseño web y Marketing digital</td>
-                  <td>ITUOM Caseros</td>
+                  <td contenteditable="true">Diseño web y Marketing digital</td>
+                  <td contenteditable="true">ITUOM Caseros</td>
                 </tr>
-                <td>Auxiliar en Administración de Microempresas</td>
-                  <td>CTA Hurlingham</td>
+                <td contenteditable="true">Auxiliar en Administración de Microempresas</td>
+                  <td contenteditable="true">CTA Hurlingham</td>
                </tr>
                 <tr>
                   <td colspan="2" class="year">2017</td>
                   
                 </tr>
                 <tr class="titles">
-                  <td>Descripción</td>
-                  <td>Institución</td>
+                  <td contenteditable="true">Descripción</td>
+                  <td contenteditable="true">Institución</td>
                 </tr>
                 <tr>
-                  <td>Armado y reparación de PC</td>
-                  <td>IAC Devoto</td>
+                  <td contenteditable="true">Armado y reparación de PC</td>
+                  <td contenteditable="true">IAC Devoto</td>
                 </tr>
               </table>
         </section>
@@ -154,13 +154,13 @@ const dataSpanish = `
     <footer id="footer" class="footer column-1">
         <section class="section profile">
             <h2 class="section__title">Perfil</h2>
-            <p class="description">
+            <p class="description" contenteditable="true">
                 Desempeñarme en tareas administrativo-informáticas, aportando los conocimientos de mis experiencias laborales y poder demostrar mis habilidades en materia de tecnología.
             </p>
         </section>
         <section class="section profile">
             <h2 class="section__title">Aptitudes</h2>
-            <p class="Aptitudes">
+            <p class="Aptitudes" contenteditable="true">
             Adaptación a los cambios y ganas aprender algo nuevo; facilidad para trabajar en equipo, planificador a largo plazo.
             </p>
         </section>
@@ -174,7 +174,7 @@ const dataSpanish = `
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
                             d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                    </svg><span id="myText">+54-11-6038-2014 </span><button
+                    </svg><span id="myText" contenteditable="true">+54-11-6038-2014 </span><button
                         onclick="copyContent()">Copiar</button>
                 </p>
                 <p class="email">
@@ -185,9 +185,9 @@ const dataSpanish = `
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
                     </svg><a
-                        href="mailto:fernandez.lautaro@hotmail.com">fernandez.&#8203;lautaro@&#8203;hotmail.&#8203;com</a>
+                        href="mailto:fernandez.lautaro@hotmail.com" contenteditable="true">fernandez.&#8203;lautaro@&#8203;hotmail.&#8203;com</a>
                 </p>
-                <p class="location">
+                <p class="location" contenteditable="true">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin"
                         width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ba0006"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -197,7 +197,7 @@ const dataSpanish = `
                             d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                     </svg>Buenos aires, Hurlingham
                 </p>
-                <p class="webpage">
+                <p class="webpage" contenteditable="true">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world"
                         width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ba0006"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -212,7 +212,7 @@ const dataSpanish = `
                         target="_blank">portfoliolautarofernandez&#8203;.firebaseapp&#8203;.com/</a>
                 </p>
 
-                <p class="github">
+                <p class="github" contenteditable="true">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                         width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -220,7 +220,7 @@ const dataSpanish = `
                         <path
                             d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                     </svg>
-                    <a href="https://github.com/Lautarof25" target="_blank">github.com/Lautarof25</a>
+                    <a href="https://github.com/Lautarof25" target="_blank" contenteditable="true">github.com/Lautarof25</a>
                 </p>
 
             </div>
@@ -228,15 +228,15 @@ const dataSpanish = `
         <section class="section skills">
             <h2 class="section__title">Habilidades</h2>
             <ul class="skill">
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>Photopea</li>
-                <li>Google sheet</li>
-                <li>Inglés B1</li>
+                <li contenteditable="true">Python</li>
+                <li contenteditable="true">Java</li>
+                <li contenteditable="true">HTML</li>
+                <li contenteditable="true">CSS</li>
+                <li contenteditable="true">JavaScript</li>
+                <li contenteditable="true">SQL</li>
+                <li contenteditable="true">Photopea</li>
+                <li contenteditable="true">Google sheet</li>
+                <li contenteditable="true">Inglés B1</li>
             </ul>
         </section>
         <section class="section social">
