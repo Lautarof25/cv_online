@@ -15,7 +15,7 @@ html {
     overflow-x: hidden;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
@@ -181,28 +181,21 @@ button:hover {
 }
 
 /* Footer */
-ul {
-    list-style: none;
-    /* Remove default bullets */
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
 }
 
-ul li::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: var(--primary-color);
-    /* Change the color */
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */
-}
-
-ul li {
-    margin-top: 1rem;
+.skill li {
+    font-size: 2rem;
+    list-style-type: none!important;
+    background: var(--primary-color);
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 .iconos {
