@@ -19,6 +19,11 @@ html {
     display: none;
 }
 
+.m-auto {
+    margin: 0 auto;
+    max-width: 270px;
+}
+
 *,
 *::before,
 *::after {

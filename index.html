@@ -96,9 +96,25 @@
                     </section>
                     <section class="section education">
                         <h2 class="section__title">Formación</h2>
+                        <div class="checkboxes m-auto gap-1">
+
+                            <label for="yearRow2023">
+                                <input type="checkbox" name="yearRow" id="yearRow2023"> 2023
+                            </label>
+                            <label for="yearRow2022">
+                                <input type="checkbox" name="yearRow" id="yearRow2022"> 2022
+                            </label>
+                            <label for="yearRow2021">
+                                <input type="checkbox" name="yearRow" id="yearRow2021"> 2021
+                            </label>
+                            <label for="yearRowPrevious">
+                                <input type="checkbox" name="yearRow" id="yearRowPrevious"> Anteriores
+                            </label>
+
+                        </div>
                         <table>
                             <tr>
-                                <td colspan="2" class="year" >2022</td>
+                                <th colspan="2" class="year" >2022</th>
                             </tr>
                             <tr class="titles">
                                 <td>Descripción</td>
@@ -125,7 +141,7 @@
                                 <td >Fundaula</td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="year">2021</td>
+                                <th colspan="2" class="year">2021</th>
                             </tr>
                             <tr class="titles">
                                 <td >Descripción</td>
@@ -144,8 +160,7 @@
                                 <td >FreeCodeCamp</td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="year">2020</td>
-
+                                <th colspan="2" class="year">2020</th>
                             </tr>
                             <tr class="titles">
                                 <td >Descripción</td>
@@ -156,8 +171,7 @@
                                 <td >Universidad de Hurlingham</td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="year">2019</td>
-
+                                <th colspan="2" class="year">2019</th>
                             </tr>
                             <tr class="titles">
                                 <td >Descripción</td>
@@ -168,8 +182,7 @@
                                 <td >CFP Hurlingham</td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="year">2018</td>
-
+                                <th colspan="2" class="year">2018</th>
                             </tr>
                             <tr class="titles">
                                 <td >Descripción</td>
@@ -187,8 +200,7 @@
                             <td >CTA Hurlingham</td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="year">2017</td>
-
+                                <th colspan="2" class="year">2017</t>
                             </tr>
                             <tr class="titles">
                                 <td >Descripción</td>
@@ -324,7 +336,7 @@
             <div class="flex">
                 <main id="main" class="main column-2">
                     <section class="section skills">
-                        <h2 class="section__title">skills</h2>
+                        <h2 class="section__title">Skills</h2>
                         <ul class="skill">
                             <li >HTML</li>
                             <li >CSS</li>
@@ -372,6 +384,7 @@
                     </section>
                     <section class="section education">
                         <h2 class="section__title">Education</h2>
+                        <input type="checkbox" name="yearTable" id="yearTable"> 2023
                         <table>
                             <tr>
                                 <td colspan="2" class="year">2022</td>
@@ -557,7 +570,7 @@
                         </div>
                     </section>
                     <section class="section social">
-                        <h2 class="section__title">social networks</h2>
+                        <h2 class="section__title">Social networks</h2>
                         <div class="flex iconos">
                             <a href="https://www.linkedin.com/in/lautaro-exequiel-fernandez-2146b3238/" target="_blank">
                                 <i class="fa-brands fa-linkedin"></i>
@@ -613,6 +626,7 @@
 
 
         <script src="./script/script.js"></script>
+        <script src="./script/filter.js"></script>
 </body>
 
 </html>
