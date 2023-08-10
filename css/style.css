@@ -36,6 +36,10 @@ body {
     /* 1rem = 10px */
 }
 
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 svg {
     width: 2rem;
     height: auto;
@@ -273,7 +277,7 @@ button:hover {
 
 table {
     border-collapse: collapse;
-    max-width: 600px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -340,6 +344,14 @@ footer.column-1 {
         text-align: center;
     }
 
+    .container {
+        margin: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
     /* Flotante */
     .a2a_default_style {
         display: flex;
@@ -347,7 +359,5 @@ footer.column-1 {
         gap: 5px;
     }
 
-    table {
-        max-width: 100%;
-    }
+
 }
