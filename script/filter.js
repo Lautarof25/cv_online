@@ -1,16 +1,6 @@
 const checkboxes = document.querySelectorAll("[name='yearRow']")
 const table2019 = document.querySelector("#table2019")
 
-// table2019.classList.add("d-none")
-
-// Qué elementos interfieren?
-
-// Checkboxes
-
-// Tables
-
-// ArrayTables
-
 let arrayTables = []
 
 checkboxes.forEach(table => 
