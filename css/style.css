@@ -9,6 +9,10 @@
     --quarter: 25rem;
 }
 
+.bg-gray {
+    background-color: var(--secondary-color);
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -22,6 +26,10 @@ html {
 .m-auto {
     margin: 0 auto;
     max-width: 270px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 *,
@@ -286,14 +294,14 @@ table td {
 }
 
 td:not(.none) {
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--secondary-color);
     padding: 5px;
     width: 50%;
 
 }
 
 .year {
-    background-color: #ba0006;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     font-weight: bold;
@@ -349,11 +357,7 @@ footer.column-1 {
     }
 
     .container {
-        margin: 0;
-    }
-
-    table {
-        width: 100%;
+        padding: 0;
     }
 
     /* Flotante */

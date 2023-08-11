@@ -1,20 +1,38 @@
 .d-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .col {
-    width: 100%;
-  }
-  
-  .col-50 {
-    width: 50%;
-  }
-  
-  .text-center{
-    text-align: center;
-  }
-  
-  .bg-white {
-    background: #fff;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: unsafe;
+}
+
+.col {
+  width: 100%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.border {
+  border: solid 0.25px var(--secondary-color);
+}
+
+
+.border-start {
+  border-left: solid 0.25px var(--secondary-color);
+}
+
+.border-bottom {
+  border-bottom: solid 0.25px var(--secondary-color);
+}
+
+.p-1 {
+  padding: .25rem;
+}

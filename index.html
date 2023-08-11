@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/data.css">
     <link rel="icon" href="./img/icon_title.png" type="image/x-icon">
     <title>CV: Fernández, Lautaro Exequiel</title>
 </head>
@@ -101,20 +102,24 @@
                         <div class="checkboxes m-auto gap-1">
 
                             <label for="yearRow2023">
-                                <input type="checkbox" name="yearRow" id="yearRow2023"> 2023
+                                <input type="checkbox" value="2023" name="yearRow" id="yearRow2023" checked> 2023
                             </label>
                             <label for="yearRow2022">
-                                <input type="checkbox" name="yearRow" id="yearRow2022"> 2022
+                                <input type="checkbox" value="2022" name="yearRow" id="yearRow2022"> 2022
                             </label>
                             <label for="yearRow2021">
-                                <input type="checkbox" name="yearRow" id="yearRow2021"> 2021
+                                <input type="checkbox" value="2021" name="yearRow" id="yearRow2021"> 2021
                             </label>
                             <label for="yearRowPrevious">
-                                <input type="checkbox" name="yearRow" id="yearRowPrevious"> Anteriores
+                                <input type="checkbox" value="previous" name="yearRow" id="yearRowPrevious"> Anteriores
                             </label>
 
                         </div>
-                        <table id="table2022">
+
+                        <div id="tableDynamic">
+
+                        </div>
+                        <!-- <table id="table2022">
                             <thead>
                                 <tr>
                                     <th colspan="2" class="year">2022</th>
@@ -187,9 +192,9 @@
                                     <td>Tecnicatura Universitaria en Informática [1º año]</td>
                                     <td>Universidad de Hurlingham</td>
                                 </tr>
-                            </table>
-                            <table id="table2019">
-                                <thead>
+                        </table>
+                        <table id="table2019">
+                            <thead>
                                 <tr>
                                     <th colspan="2" class="year">2019</th>
                                 </tr>
@@ -245,7 +250,7 @@
                                     <td>IAC Devoto</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
                     </section>
                 </main>
 
