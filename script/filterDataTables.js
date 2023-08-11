@@ -42,19 +42,14 @@ const tableDynamic = document.querySelector("#tableDynamic")
 
 function templateTable(numberTable) {
 
-  // Tabla
   const tableDiv = document.createElement("div");
-  // Cabecera año
+
   const headerDiv = document.createElement("div");
-  // Texto Cabecera año
   let numberYear = Object.keys(dataTable)[numberTable]
   const textHeader = document.createTextNode(numberYear);
-  // Cabecera descripción y institutción
   const titleDescriptionDiv = document.createElement("div");
-  // Texto Cabecera año
   const textTitleDesc = document.createTextNode("Descripción");
   const titleInstitutionDiv = document.createElement("div");
-  // Texto Cabecera año
   const textTitleInst = document.createTextNode("Institución");
 
   headerDiv.appendChild(textHeader)
@@ -81,10 +76,10 @@ function templateTable(numberTable) {
     rowInstitutionDiv.setAttribute("class", "col-50 border-bottom border-start p-1")
   }
 
-  tableDiv.setAttribute("class", "d-flex border bg-white")
+  tableDiv.setAttribute("class", "d-flex border")
   headerDiv.setAttribute("class", "col text-center year")
-  titleDescriptionDiv.setAttribute("class", "col-50 bg-gray bold")
-  titleInstitutionDiv.setAttribute("class", "col-50 bg-gray bold")
+  titleDescriptionDiv.setAttribute("class", "col-50 bg-grayGray bold")
+  titleInstitutionDiv.setAttribute("class", "col-50 bg-grayGray bold")
 
   tableDynamic.appendChild(tableDiv)
 }
