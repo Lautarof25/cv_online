@@ -1,4 +1,4 @@
-const years = {
+const dataTable = {
   "2023": [
     {
       "description": ["Técnico superior en desarrollo de software (1º Año)"],
@@ -40,14 +40,14 @@ const years = {
 
 const tableDynamic = document.querySelector("#tableDynamic")
 
-function tableCreate(numberTable) {
+function templateTable(numberTable) {
 
   // Tabla
   const tableDiv = document.createElement("div");
   // Cabecera año
   const headerDiv = document.createElement("div");
   // Texto Cabecera año
-  let numberYear = Object.keys(years)[numberTable]
+  let numberYear = Object.keys(dataTable)[numberTable]
   const textHeader = document.createTextNode(numberYear);
   // Cabecera descripción y institutción
   const titleDescriptionDiv = document.createElement("div");
@@ -64,17 +64,12 @@ function tableCreate(numberTable) {
   tableDiv.appendChild(headerDiv)
   tableDiv.appendChild(titleDescriptionDiv)
   tableDiv.appendChild(titleInstitutionDiv)
-  // Crear un bucle por cada elemento Object.values(years)[I][I].description
-  for (let i = 0; i < Object.values(years)[numberTable][0].description.length; i++) {
-    let descr = Object.values(years)[numberTable][0].description[i]
-    let inst = Object.values(years)[numberTable][0].institution[i]
-    // Fila descripción
+  for (let i = 0; i < Object.values(dataTable)[numberTable][0].description.length; i++) {
+    let descr = Object.values(dataTable)[numberTable][0].description[i]
+    let inst = Object.values(dataTable)[numberTable][0].institution[i]
     var rowDescriptionDiv = document.createElement("div");
-    // Fila Institución
     var rowInstitutionDiv = document.createElement("div");
-    // Texto descripción
     var textDescription = document.createTextNode(descr);
-    // Texto institution
     var textInstitution = document.createTextNode(inst);
 
     rowDescriptionDiv.appendChild(textDescription)
@@ -82,11 +77,11 @@ function tableCreate(numberTable) {
 
     tableDiv.appendChild(rowDescriptionDiv)
     tableDiv.appendChild(rowInstitutionDiv)
-    rowDescriptionDiv.setAttribute("class", "col-50 bg-white border-bottom p-1")
-    rowInstitutionDiv.setAttribute("class", "col-50 bg-white border-bottom border-start p-1")
+    rowDescriptionDiv.setAttribute("class", "col-50 border-bottom p-1")
+    rowInstitutionDiv.setAttribute("class", "col-50 border-bottom border-start p-1")
   }
 
-  tableDiv.setAttribute("class", "d-flex border")
+  tableDiv.setAttribute("class", "d-flex border bg-white")
   headerDiv.setAttribute("class", "col text-center year")
   titleDescriptionDiv.setAttribute("class", "col-50 bg-gray bold")
   titleInstitutionDiv.setAttribute("class", "col-50 bg-gray bold")
@@ -96,32 +91,40 @@ function tableCreate(numberTable) {
 
 const checkboxes = document.querySelectorAll("[name='yearRow']")
 
-let arrayTables = ["2023"]
+let arrayTables = ["2023", "2022", "2021"]
+
+// Filtro
 
 checkboxes.forEach(table =>
   table.addEventListener("click", function () {
-    addValueToArrayTables(table)
+    updateArrayTables(table)
+    createTables()
   })
 )
 
 createTables()
 
-function addValueToArrayTables(table) {
+function updateArrayTables(table) {
   if (table.checked && !arrayTables.includes(table.value)) {
     arrayTables.push(table.value)
   } else if (arrayTables.includes(table.value)) {
     arrayTables.splice(arrayTables.indexOf(table.value), 1)
   }
-  createTables()
+  arrayTables.sort().reverse()
 }
 
-function createTables(){
+function createTables() {
   while (tableDynamic.firstChild) {
     tableDynamic.removeChild(tableDynamic.firstChild);
   }
   for (let i = 0; i < arrayTables.length; i++) {
-    if(Object.keys(years).includes(arrayTables[i])){
-      tableCreate(Object.keys(years).indexOf(arrayTables[i]))
+    if (Object.keys(dataTable).includes(arrayTables[i])) {
+      templateTable(Object.keys(dataTable).indexOf(arrayTables[i]))
+    }else if (arrayTables.includes("0previous")){
+      templateTable(3)
+      templateTable(2)
+      templateTable(1)
+      templateTable(0)
     }
   }
 }

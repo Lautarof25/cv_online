@@ -1,0 +1,12 @@
+.bg-dark {
+    background-color: var(--dark);
+}
+.bg-darkGray {
+    background-color: var(--darkGray);
+}
+.text-white {
+    color: var(--secondary-color);
+}
+.text-dark {
+    color: var(--dark)
+}
