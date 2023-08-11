@@ -30,7 +30,7 @@
 }
 
 .border-bottom {
-  border-bottom: solid 0.25px var(--secondary-color);
+  border-top: solid 0.25px var(--secondary-color);
 }
 
 .p-1 {

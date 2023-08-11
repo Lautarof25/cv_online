@@ -37,10 +37,50 @@ const dataTable = {
   }
   ],
 }
+const dataTableEnglish = {
+  "2023": [
+    {
+      "description": ["Higher Technician in Software Development (1st year)"],
+      "institution": ["ITFS Nº29"]
+    }
+  ],
+  "2022": [
+    {
+      "description": ["Testing QA Basic", "Introduction to SQL", "Programming from zero", "Python Core", "Java II"],
+      "institution": ["Eduting, Academia QA", "Tecno 3F", "Egg Educación", "SoloLearn", "Fundaula"]
+    }
+  ],
+  "2021": [{
+    "description": ["Python course", "Introduction to Web development II", "Responsive Web Desing"],
+    "institution": ["Hurlingam university", "Google Activate", "FreeCodeCamp"]
+  }
+  ],
+  "2020": [{
+    "description": ["University Technician in Computer Science [1st year]"],
+    "institution": ["Hurlingam university"]
+  }
+  ],
+  "2019": [{
+    "description": ["Graphic interface systems programmer"],
+    "institution": ["CFP Hurlingham"]
+  }
+  ],
+  "2018": [{
+    "description": ["Supervisor and administrator of Computer Networks", "Web Design and Digital Marketing", "Assistant in microenterprise administration"],
+    "institution": ["CFP Hurlingham", "ITUOM Caseros", "CTA Hurlingham"]
+  }
+  ],
+  "2017": [{
+    "description": ["Computer Repair and Maintenance Technician"],
+    "institution": ["IAC Devoto"]
+  }
+  ],
+}
 
 const tableDynamic = document.querySelector("#tableDynamic")
+const tableDynamic2 = document.querySelector("#tableDynamic2")
 
-function templateTable(numberTable) {
+function templateTable(numberTable, dataTable,tableDynamic) {
 
   const tableDiv = document.createElement("div");
 
@@ -85,6 +125,7 @@ function templateTable(numberTable) {
 }
 
 const checkboxes = document.querySelectorAll("[name='yearRow']")
+const checkboxes2 = document.querySelectorAll("[name='yearRow2']")
 
 let arrayTables = ["2023", "2022", "2021"]
 
@@ -93,11 +134,15 @@ let arrayTables = ["2023", "2022", "2021"]
 checkboxes.forEach(table =>
   table.addEventListener("click", function () {
     updateArrayTables(table)
-    createTables()
+    createTables(tableDynamic)
   })
 )
-
-createTables()
+checkboxes2.forEach(table =>
+  table.addEventListener("click", function () {
+    updateArrayTables(table)
+    createTables(tableDynamic2)
+  })
+)
 
 function updateArrayTables(table) {
   if (table.checked && !arrayTables.includes(table.value)) {
@@ -108,18 +153,30 @@ function updateArrayTables(table) {
   arrayTables.sort().reverse()
 }
 
-function createTables() {
+function createTables(tableDynamic) {
   while (tableDynamic.firstChild) {
     tableDynamic.removeChild(tableDynamic.firstChild);
   }
   for (let i = 0; i < arrayTables.length; i++) {
     if (Object.keys(dataTable).includes(arrayTables[i])) {
-      templateTable(Object.keys(dataTable).indexOf(arrayTables[i]))
+      if (select.value === "spanish")
+        templateTable(Object.keys(dataTable).indexOf(arrayTables[i]), dataTable,tableDynamic)
+      else 
+        templateTable(Object.keys(dataTableEnglish).indexOf(arrayTables[i]), dataTableEnglish,tableDynamic2)
     }else if (arrayTables.includes("0previous")){
-      templateTable(3)
-      templateTable(2)
-      templateTable(1)
-      templateTable(0)
+      if (select.value === "spanish"){
+        templateTable(3, dataTable,tableDynamic)
+        templateTable(2, dataTable,tableDynamic)
+        templateTable(1, dataTable,tableDynamic)
+        templateTable(0, dataTable,tableDynamic)
+      }else {
+        templateTable(3, dataTableEnglish,tableDynamic2)
+        templateTable(2, dataTableEnglish,tableDynamic2)
+        templateTable(1, dataTableEnglish,tableDynamic2)
+        templateTable(0, dataTableEnglish,tableDynamic2)
+      }
     }
   }
 }
+
+createTables(tableDynamic)
