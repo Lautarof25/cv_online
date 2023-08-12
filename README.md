@@ -1,3 +1,38 @@
-![Diseño sin título](https://user-images.githubusercontent.com/81919816/210138887-2c0e36ff-e3d3-4b7e-b2f6-b2f319e39778.gif)
-# CV Fernández Lautaro
-https://lautarof25.github.io/cv_online/
+
+# CV online
+
+Una plantilla para un curriculum online dinámico.
+
+## Mockup
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Demo
+
+Insert gif or link to demo
+
+## Color Reference
+
+| Colores             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Color Principal | ![#ba0006](https://via.placeholder.com/10/ba0006?text=+) #0a192f |
+| Color secundario | ![#717171](https://via.placeholder.com/10/717171?text=+) #f8f8f8 |
+| Otro color | ![#f2f2f2](https://via.placeholder.com/10/f2f2f2?text=+) #00b48a |
+
+## 🛠 Skills
+Javascript, HTML, CSS
+
+
+## Next features
+
+- Content editable 
+
+- Hacer una captura y descargarla en formato imagen
+## Authors
+
+- [@lautarof25](https://www.github.com/lautarof25)
+
