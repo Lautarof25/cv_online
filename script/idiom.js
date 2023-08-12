@@ -5,7 +5,7 @@ const english = document.querySelector("#english");
 select.addEventListener("change", () => {
   resetArrayTables();
   changeIdiom();
-  resetCheckboxes();
+ resetCheckboxes();
 });
 
 function changeIdiom() {
@@ -14,11 +14,11 @@ function changeIdiom() {
   if (isEnglishSelected) {
     spanish.classList.add("d-none");
     english.classList.remove("d-none");
-    createTables(tableDynamic);
+    createTables(tableDynamic2);
   } else {
     spanish.classList.remove("d-none");
     english.classList.add("d-none");
-    createTables(tableDynamic2);
+    createTables(tableDynamic);
   }
 }
 
