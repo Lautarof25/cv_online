@@ -13,28 +13,42 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/data.css">
     <link rel="stylesheet" href="./css/darkMode.css">
+    <link rel="stylesheet" href="./css/screenShoot.css">
+    <link rel="stylesheet" href="./css/dynamicImg.css">
     <link rel="icon" href="./img/icon_title.png" type="image/x-icon">
     <title>CV: Fernández, Lautaro Exequiel</title>
+    <!-- ScreenShoot CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
 </head>
 
 <body>
+    <div class="d-none popUp" id="screenPhoto">
 
+    </div>
     <div class="container" id="container">
         <div class="ball-red"></div>
         <div class="ball-gray"></div>
 
         <div class="select_idiom">
-            <select id="select">
+            <select id="select" class="btn">
                 <option value="spanish" selected>Spanish</option>
                 <option value="english">English</option>
             </select>
             <button id="buttonMode">
                 <i class="fa-solid fa-circle-half-stroke"></i>
             </button>
+            <button id="buttonScreenShoot">
+                <i class="fa-solid fa-camera"></i>
+            </button>
         </div>
+
+
         <header id="header" class="header flex">
             <div class="column-1 header__img">
-                <img src="./img/profile_picture.png" alt="profile photo" class="header__photo">
+                <label for="picker" class="btn">Select Image</label>
+                <input id="picker"  style="visibility:hidden;" type="file">
+                <img id="preview" src="./img/profile_picture.png" alt="profile photo" class="header__photo">
             </div>
             <div class="header__container column-2">
                 <h1 class="header__title">Lautaro <span>Fernández</span>
@@ -342,7 +356,7 @@
                                     <path
                                         d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
                                 </svg><span id="myNumber2">+54-11-6038-2014 </span><button
-                                   id="copyButton2">Copy</button>
+                                    id="copyButton2">Copy</button>
                             </p>
                             <p class="email">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail"
@@ -454,6 +468,8 @@
         <script src="./script/data.js"></script>
         <script src="./script/filterDataTables.js"></script>
         <script src="./script/darkMode.js"></script>
+        <script src="./script/screenShoot.js"></script>
+        <script src="./script/dynamicImg.js"></script>
 </body>
 
 </html>

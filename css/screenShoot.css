@@ -1,0 +1,14 @@
+canvas {
+    width: 200px!important;
+    height: 200px!important;
+    position: absolute;
+    z-index: 100;
+}
+
+.popUp {
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    right: 350px;
+    border: 5px solid var(--principal-color);
+}

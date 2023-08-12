@@ -19,8 +19,8 @@ function createTableElement(dataTable, numberTable) {
   tableDiv.className = "d-flex border";
 
   const headerDiv = createDivWithText("col text-center year", Object.keys(dataTable)[numberTable]);
-  const titleDescriptionDiv = createDivWithText("col-50 bg-grayGray bold", "Descripción");
-  const titleInstitutionDiv = createDivWithText("col-50 bg-grayGray bold", "Institución");
+  const titleDescriptionDiv = createDivWithText("col-50 bg-grayGray bold", "Description");
+  const titleInstitutionDiv = createDivWithText("col-50 bg-grayGray bold", "Institution");
 
   tableDiv.appendChild(headerDiv);
   tableDiv.appendChild(titleDescriptionDiv);
