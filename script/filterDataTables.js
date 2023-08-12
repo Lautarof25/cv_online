@@ -1,9 +1,22 @@
-const tableDynamic = document.querySelector("#tableDynamic")
-const tableDynamic2 = document.querySelector("#tableDynamic2")
+const tableDynamic = document.querySelector("#tableDynamic");
+const tableDynamic2 = document.querySelector("#tableDynamic2");
 
-function templateTable(numberTable, dataTable, tableDynamic) {
+let arrayTables = ["2023", "2022", "2021"];
+const selectedTableData = {
+  "spanish": dataTable,
+  "english": dataTableEnglish
+};
+
+function createDivWithText(className, text) {
+  const div = document.createElement("div");
+  div.className = className;
+  div.textContent = text;
+  return div;
+}
+
+function createTableElement(dataTable, numberTable) {
   const tableDiv = document.createElement("div");
-  tableDiv.setAttribute("class", "d-flex border");
+  tableDiv.className = "d-flex border";
 
   const headerDiv = createDivWithText("col text-center year", Object.keys(dataTable)[numberTable]);
   const titleDescriptionDiv = createDivWithText("col-50 bg-grayGray bold", "Descripción");
@@ -23,44 +36,16 @@ function templateTable(numberTable, dataTable, tableDynamic) {
     tableDiv.appendChild(rowInstitutionDiv);
   }
 
-  tableDynamic.appendChild(tableDiv);
+  return tableDiv;
 }
-
-function createDivWithText(className, text) {
-  const div = document.createElement("div");
-  div.setAttribute("class", className);
-  const textNode = document.createTextNode(text);
-  div.appendChild(textNode);
-  return div;
-}
-
-const checkboxes = document.querySelectorAll("[name='yearRow']")
-const checkboxes2 = document.querySelectorAll("[name='yearRow2']")
-
-let arrayTables = ["2023", "2022", "2021"]
-
-// Filtro
-
-checkboxes.forEach(table =>
-  table.addEventListener("click", function () {
-    updateArrayTables(table)
-    createTables(tableDynamic)
-  })
-)
-checkboxes2.forEach(table =>
-  table.addEventListener("click", function () {
-    updateArrayTables(table)
-    createTables(tableDynamic2)
-  })
-)
 
 function updateArrayTables(table) {
   if (table.checked && !arrayTables.includes(table.value)) {
-    arrayTables.push(table.value)
+    arrayTables.push(table.value);
   } else if (arrayTables.includes(table.value)) {
-    arrayTables.splice(arrayTables.indexOf(table.value), 1)
+    arrayTables.splice(arrayTables.indexOf(table.value), 1);
   }
-  arrayTables.sort().reverse()
+  arrayTables.sort().reverse();
 }
 
 function createTables(tableDynamic) {
@@ -68,14 +53,19 @@ function createTables(tableDynamic) {
     tableDynamic.removeChild(tableDynamic.firstChild);
   }
 
-  const selectedTableData = (select.value === "spanish") ? dataTable : dataTableEnglish;
-  const templateFunction = (index) => templateTable(index, selectedTableData, tableDynamic);
+  const selectedLanguage = select.value;
+  const templateFunction = (index) => {
+    if (selectedTableData[selectedLanguage] && Object.keys(selectedTableData[selectedLanguage])[index]) {
+      const tableElement = createTableElement(selectedTableData[selectedLanguage], index);
+      tableDynamic.appendChild(tableElement);
+    }
+  };
 
   for (let i = 0; i < arrayTables.length; i++) {
     const tableName = arrayTables[i];
 
-    if (Object.keys(dataTable).includes(tableName)) {
-      const tableIndex = Object.keys(dataTable).indexOf(tableName);
+    if (Object.keys(selectedTableData[selectedLanguage]).includes(tableName)) {
+      const tableIndex = Object.keys(selectedTableData[selectedLanguage]).indexOf(tableName);
       templateFunction(tableIndex);
     } else if (tableName === "0previous") {
       for (let j = 3; j >= 0; j--) {
@@ -85,4 +75,16 @@ function createTables(tableDynamic) {
   }
 }
 
-createTables(tableDynamic)
+function setupTableListeners(checkboxes, tableDynamic) {
+  checkboxes.forEach(table => {
+    table.addEventListener("click", () => {
+      updateArrayTables(table);
+      createTables(tableDynamic);
+    });
+  });
+}
+
+setupTableListeners(document.querySelectorAll("[name='yearRow']"), tableDynamic);
+setupTableListeners(document.querySelectorAll("[name='yearRow2']"), tableDynamic2);
+
+createTables(tableDynamic);
