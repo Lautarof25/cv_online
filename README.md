@@ -5,6 +5,8 @@ Una plantilla para un curriculum online dinámico.
 
 ## Mockup
 
+![New Wireframe 1 (1)](https://github.com/Lautarof25/cv_online/assets/81919816/bb4e50ee-996a-4d02-bbd2-0fbb5c952f02)
+
 
 ## Screenshots
 
