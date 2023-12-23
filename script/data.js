@@ -1,8 +1,8 @@
 const dataTable = {
   "2023": [
     {
-      description: ["Técnico superior en desarrollo de software (1º Año)"],
-      institution: ["ITFS Nº29"],
+      description: ["Java Full Stack"],
+      institution: ["Codo a codo"],
     },
   ],
   "2022": [
